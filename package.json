@@ -1,6 +1,6 @@
 {
   "name": "koa-better-body",
-  "version": "0.0.3-travis-bugged",
+  "version": "1.0.0",
   "description": "A koa body parser middleware. Support multipart, urlencoded and json request bodies.",
   "scripts": {
     "start": "make start",
