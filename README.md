@@ -42,13 +42,21 @@ app.use(function *(next) {
   yield next;
 });
 app.listen(3131)
-console.log('curl -i -X http://localhost:3131/ -d "name=test"');
+console.log('curl -i http://localhost:3131/ -d "name=test"');
 ```
 
 ## Usage with [koa-router](https://github.com/alexmingoia/koa-router)
 > It's generally better to only parse the body as needed, if using a router that supports middleware composition, we can inject it only for certain routes.
 
 ```js
+/**
+ * koa-better-body - example.js
+ * Copyright(c) 2014
+ * MIT Licensed
+ *
+ * @author  Charlike Mike Reagent (@tunnckoCore)
+ * @api private
+ */
 var app       = require('koa')(),
     router    = require('koa-router'),
     koaBody   = require('./index')(/*defaults*/);
@@ -110,8 +118,8 @@ app.post('/', koaBody,
 var port = process.env.PORT || 3333;
 app.listen(port);
 console.log('Koa server with `koa-better-body` parser start listening to port %s', port);
-console.log('curl -i -X http://localhost:%s/users -d "user=admin"', port);
-console.log('curl http://localhost:%s/ -F "source=@/path/to/file.png"', port);
+console.log('curl -i http://localhost:%s/users -d "user=admin"', port);
+console.log('curl -i http://localhost:%s/ -F "source=@/path/to/file.png"', port);
 ```
 
 

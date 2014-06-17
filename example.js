@@ -67,5 +67,5 @@ app.post('/', koaBody,
 var port = process.env.PORT || 3333;
 app.listen(port);
 console.log('Koa server with `koa-better-body` parser start listening to port %s', port);
-console.log('curl -i -X http://localhost:%s/users -d "user=admin"', port);
-console.log('curl http://localhost:%s/ -F "source=@/path/to/file.png"', port);
+console.log('curl -i http://localhost:%s/users -d "user=admin"', port);
+console.log('curl -i http://localhost:%s/ -F "source=@/path/to/file.png"', port);
