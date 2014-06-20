@@ -1,6 +1,6 @@
 {
   "name": "koa-better-body",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A koa body parser middleware. Support multipart, urlencoded and json request bodies.",
   "scripts": {
     "start": "make start",
@@ -9,7 +9,8 @@
   "author": {
     "name": "Charlike Mike Reagent",
     "email": "mameto_100@mail.bg",
-    "url": "https://github.com/tunnckoCore"
+    "url": "http://www.whistle-bg.tk",
+    "twitter": "tunnckoCore"
   },
   "repository": {
     "type": "git",
@@ -36,16 +37,16 @@
     "test.js"
   ],
   "dependencies": {
-    "co-body": "*",
+    "co-body": "0.0.2",
     "formidable": "1.0.15"
   },
   "devDependencies": {
-    "koa": "*",
-    "koa-router": "*",
-    "multiline": "*",
-    "mocha": "*",
-    "should": "*",
-    "supertest": "*"
+    "koa": ">=0.8.0",
+    "koa-router": "~3.1.4",
+    "multiline": "~0.3.4",
+    "mocha": "~1.20.1",
+    "should": "~4.0.4",
+    "supertest": "0.13.0"
   },
   "license": "MIT"
 }
